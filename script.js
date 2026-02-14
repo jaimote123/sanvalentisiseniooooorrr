@@ -209,18 +209,18 @@ function playBackgroundMusic() {
   audio.loop = true;
   // Intentar reproducir inmediatamente
   audio.play().then(() => {
-    btn.textContent = '🔊 Música';
+    btn.textContent = '🔊 Músiquita';
   }).catch(() => {
     // Si falla el autoplay, esperar click en el botón
-    btn.textContent = '▶️ Música';
+    btn.textContent = '▶️ Músiquita';
   });
   btn.onclick = () => {
     if (audio.paused) {
       audio.play();
-      btn.textContent = '🔊 Música';
+      btn.textContent = '🔊 Músiquita';
     } else {
       audio.pause();
-      btn.textContent = '🔈 Música';
+      btn.textContent = '🔈 Músiquita';
     }
   };
 }
